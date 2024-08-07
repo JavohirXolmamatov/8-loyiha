@@ -1,0 +1,847 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+.top-nav-section {
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.top-nav a {
+    text-decoration: none;
+    
+}
+
+.top-nav a i {
+    color: #1C1C50;
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+}
+
+.btn1 {
+    border: 2px solid #1C1C50;
+    padding: 0.1rem 0.2rem;
+    border-radius: 8px;
+    color: #1C1C50;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn1:hover {
+    background-color: #1C1C50;
+    color: #F2F2F2;
+    transition: 0.5s ease;
+}
+/* === top nav style finish === */
+
+/* === main nav style start === */
+.main-nav-section {
+    background-color: #1C1C50;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navbar-brand img {
+    width: 10rem;
+}
+
+.navbar-toggler .bi-list {
+    color: white; /* Rangini oq qilish */
+    font-size: 1.5rem; /* O'lchamini o'zgartirish */
+}
+
+.navbar-nav .nav-item a:hover{
+    color: #198754;
+    transition: 0.5s ease;
+
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: white;
+}
+
+.nav-item .dropdown-menu li a{
+    color: white;
+}
+
+form {
+    width: 100%;
+}
+/* === main nav style finish === */
+
+
+/* === main header section style start === */
+.main-header {
+    background-color: #F2F2F2;
+    padding-top: 5rem;
+    height: auto; /* Kichik ekranlar uchun height avtomatik bo'lishi kerak */
+}
+/* === main header section style finish === */
+
+
+/* === mini card section start ===  */
+.mini-card-section {
+    padding: 30px 0;
+}
+
+.mini-card-section .card {
+    background-color: #F2F2F2;
+}
+
+.card-body-overlay {
+    position: absolute;
+    font-size: 0.7rem;
+    line-height: normal;
+}
+
+.card-body-overlay a{
+    font-size: 0.8rem;   
+}
+
+.mini-card {
+    overflow: hidden;
+}
+
+.dsp-none {
+    display: none;
+}
+/* === mini card section finish ===  */
+
+
+/* === img-section start === */
+.img-section .card{
+    align-items: center;
+    justify-content: center;
+}
+
+.img-section .card img {
+    height: 200px;
+}
+.card-body-overlay2 {
+    position: absolute;
+    bottom: 0;
+    top: 1rem;
+    color: white;
+    text-align: center;
+}
+/* === img-section start === */
+
+
+
+/* === product section start === */
+.star {
+    fofnt-size: 2rem;
+    color: gray;
+    cursor: pointer;
+}
+.star.selected {
+    color: gold;
+}
+
+.product-section .card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.view-more {
+    padding: 0.5rem 3rem;
+    letter-spacing: 3px;
+    background-color: white;
+    border: 1px solid #1C1C50;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    background-color: #1C1C50;
+    color: white;
+    border: none;
+    transition: 0.5s ease;
+}
+
+.product-icon i {
+    font-size: 3rem;
+    color: #1C1C50;
+}
+
+.card-body {
+   padding: 0 16px !important;
+}
+
+.product-row .card img {
+    height: 172.88px;
+}
+/* === product section finish === */
+
+/* === about section start === */
+.about-icon i {
+    font-size: 3rem;
+    color: #1C1C50;
+}
+/* === about section finish === */
+
+/* === footer section start === */
+.footer-section {
+    background-color: #1C1C50;
+    color: white;
+    font-family: Roboto Slab sans-serif;
+}
+
+.footer-section .col-lg-3 ul li{
+    list-style-type: none;
+    line-height: 2rem;
+    
+}
+
+.footer-section .col-lg-3 ul li a{
+    color: white;
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.footer-section .col-lg-3 a {
+    padding-right: 15px;
+    color: white;
+}
+
+.footer-end {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+/* === footer section finish === */
+
+/* === landscape qurilmalar uchun === */
+@media screen and (min-width: 576px) {
+    /* === top nav style start === */
+    .top-nav-section {
+        background-color: #F2F2F2;
+    }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 1rem 3rem;
+    }
+
+    .top-nav a {
+        text-decoration: none;
+        
+    }
+
+    .top-nav a i {
+        color: #1C1C50;
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+    }
+
+    .btn1 {
+        border: 2px solid #1C1C50;
+        padding: 0.3rem 1rem;
+        border-radius: 8px;
+        color: #1C1C50;
+        font-weight: bold;
+    }
+
+    .btn1:hover {
+        background-color: #1C1C50;
+        color: #F2F2F2;
+        transition: 0.5s ease;
+    }
+    /* === top nav style finish === */
+
+
+    /* === main nav style start === */
+    .main-nav-section {
+        background-color: #1C1C50;
+        color: #ffffff;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-brand img {
+        width: 10rem;
+    }
+
+    .navbar-toggler .bi-list {
+        color: white; /* Rangini oq qilish */
+        font-size: 1.5rem; /* O'lchamini o'zgartirish */
+    }
+
+    .navbar-nav .nav-item a:hover{
+        color: #198754;
+        transition: 0.5s ease;
+
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #ffffff;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+        color: white;
+    }
+
+    .nav-item .dropdown-menu li a{
+        color: white;
+    }
+
+    /* === main nav style finish === */
+
+    /* === main header section style start === */
+    .main-header {
+        background-color: #F2F2F2;
+        padding-top: 5rem;
+        height: auto;
+    }
+    /* === main header section style finish === */
+
+
+    /* === mini card section start ===  */
+    .mini-card-section {
+        padding: 30px 0;
+    }
+
+    .mini-card-section .card {
+        background-color: #F2F2F2;
+    }
+
+    .card-body-overlay {
+        position: absolute;
+    }
+
+    .mini-card-section .card img {
+        height: 300px;
+        background-size: cover;
+    }
+
+    .dsp-none {
+        display: block;
+    }
+    /* === mini card section finish ===  */
+
+
+    /* === img-section start === */
+    .img-section .card{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mini-card img {
+        height: 450px;
+    }
+
+    .card-body-overlay2 {
+        position: absolute;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.2rem;
+    }
+    /* === img-section start === */
+
+
+
+    /* === product section start === */
+    .star {
+        fofnt-size: 2rem;
+        color: gray;
+        cursor: pointer;
+    }
+    .star.selected {
+        color: gold;
+    }
+
+    .product-section .card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .view-more {
+        padding: 0.5rem 3rem;
+        letter-spacing: 3px;
+        background-color: white;
+        border: 1px solid #1C1C50;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .view-more:hover {
+        background-color: #1C1C50;
+        color: white;
+        border: none;
+        transition: 0.5s ease;
+    }
+
+    .product-icon i {
+        font-size: 3rem;
+        color: #1C1C50;
+    }
+
+    .product-row .card img {
+        height: 150px;
+    }
+    /* === product section finish === */
+
+    /* === about section start === */
+    .about-icon i {
+        font-size: 3rem;
+        color: #1C1C50;
+    }
+    /* === about section finish === */
+
+    /* === footer section start === */
+    .footer-section {
+        background-color: #1C1C50;
+        color: white;
+        font-family: Roboto Slab sans-serif;
+    }
+
+    .footer-section .col ul li{
+        list-style-type: none;
+        line-height: 2rem;
+    }
+
+    .footer-section .col ul li a{
+        color: white;
+        list-style-type: none;
+    }
+
+    .footer-section .col a {
+        padding-right: 15px;
+        color: white;
+    }
+
+    .footer-end {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* === footer section finish === */
+}
+
+/* === planshet qurilmalar uchun === */
+@media screen and (min-width: 768px) {
+    /* === top nav style start === */
+    .top-nav-section {
+        background-color: #F2F2F2;
+    }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 1rem 3rem;
+    }
+
+    .top-nav a {
+        text-decoration: none;
+        
+    }
+
+    .top-nav a i {
+        color: #1C1C50;
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+    }
+
+    .btn1 {
+        border: 2px solid #1C1C50;
+        padding: 0.3rem 1rem;
+        border-radius: 8px;
+        color: #1C1C50;
+        font-weight: bold;
+    }
+
+    .btn1:hover {
+        background-color: #1C1C50;
+        color: #F2F2F2;
+        transition: 0.5s ease;
+    }
+    /* === top nav style finish === */
+
+
+    /* === main nav style start === */
+    .main-nav-section {
+        background-color: #1C1C50;
+        color: white;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
+    .navbar-nav .nav-item a{
+        color: white;
+    }
+
+    .navbar-nav .nav-item a:hover{
+        color: #198754;
+        transition: 0.5s ease;
+
+    }
+    
+    form {
+        width: auto;
+    }
+    /* === main nav style finish === */
+
+    /* === main header section style start === */
+    .main-header {
+        background-color: #F2F2F2;
+        padding-top: 5rem;
+        height: auto;
+    }
+    /* === main header section style finish === */
+
+
+    /* === mini card section start ===  */
+    .mini-card-section {
+        padding: 30px 0;
+    }
+
+    .mini-card-section .card {
+        background-color: #F2F2F2;
+    }
+
+    .card-body-overlay {
+        position: absolute;
+    }
+    /* === mini card section finish ===  */
+
+
+    /* === img-section start === */
+    .img-section .card{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-section .card img {
+        height: auto;
+    }
+
+    .card-body-overlay2 {
+        position: absolute;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.2rem;
+    }
+    /* === img-section start === */
+
+
+
+    /* === product section start === */
+    .star {
+        fofnt-size: 2rem;
+        color: gray;
+        cursor: pointer;
+    }
+    .star.selected {
+        color: gold;
+    }
+
+    .product-section .card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .view-more {
+        padding: 0.5rem 3rem;
+        letter-spacing: 3px;
+        background-color: white;
+        border: 1px solid #1C1C50;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .view-more:hover {
+        background-color: #1C1C50;
+        color: white;
+        border: none;
+        transition: 0.5s ease;
+    }
+
+    .product-icon i {
+        font-size: 3rem;
+        color: #1C1C50;
+    }
+    /* === product section finish === */
+
+    /* === about section start === */
+    .about-icon i {
+        font-size: 3rem;
+        color: #1C1C50;
+    }
+    /* === about section finish === */
+
+    /* === footer section start === */
+    .footer-section {
+        background-color: #1C1C50;
+        color: white;
+        font-family: Roboto Slab sans-serif;
+    }
+
+    .footer-section .col ul li{
+        list-style-type: none;
+        line-height: 2rem;
+    }
+
+    .footer-section .col ul li a{
+        color: white;
+        list-style-type: none;
+    }
+
+    .footer-section .col a {
+        padding-right: 15px;
+        color: white;
+    }
+
+    .footer-end {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* === footer section finish === */
+}
+
+/* === desktop qurilmalar uchun === */
+@media screen and (min-width: 1025px) {
+    /* === top nav style start === */
+    .top-nav-section {
+        background-color: #F2F2F2;
+    }
+
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 1rem 3rem;
+    }
+
+    .top-nav a {
+        text-decoration: none;
+        
+    }
+
+    .top-nav a i {
+        color: #1C1C50;
+        font-size: 1.3rem;
+        margin: 0 0.5rem;
+    }
+
+    .btn1 {
+        border: 2px solid #1C1C50;
+        padding: 0.3rem 1rem;
+        border-radius: 8px;
+        color: #1C1C50;
+        font-weight: bold;
+    }
+
+    .btn1:hover {
+        background-color: #1C1C50;
+        color: #F2F2F2;
+        transition: 0.5s ease;
+    }
+    /* === top nav style finish === */
+
+
+    /* === main nav style start === */
+    .main-nav-section {
+        background-color: #1C1C50;
+        color: white;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item a{
+        color: white;
+    }
+
+    .navbar-nav .nav-item a:hover{
+        color: #198754;
+        transition: 0.5s ease;
+
+    }
+
+    .container-fluid form{
+        width: calc(30%);
+    }
+
+    /* === main nav style finish === */
+
+    /* === main header section style start === */
+    .main-header {
+        background-color: #F2F2F2;
+        padding-top: 5rem;
+        height: 90vh;
+        width: auto;
+    }
+    /* === main header section style finish === */
+
+
+    /* === mini card section start ===  */
+    .mini-card-section {
+        padding: 30px 0;
+    }
+
+    .mini-card-section .card {
+        background-color: #F2F2F2;
+    }
+
+    .mini-card-section .card img {
+        height: 350px;
+    }
+
+    .card-body-overlay {
+        position: absolute;
+    }
+
+    .dsp-none {
+        display: block;
+    }
+    /* === mini card section finish ===  */
+
+
+    /* === img-section start === */
+
+    .img-section .card{
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+    }
+
+    .img-section .card img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-body-overlay2 {
+        position: absolute;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.2rem;
+        vertical-align: middle;
+        padding-top: 5rem;
+    }
+
+    .card-body-overlay p {
+        font-size: 1rem;
+    }
+
+    /* === img-section start === */
+
+
+
+    /* === product section start === */
+    .star {
+        fofnt-size: 2rem;
+        color: gray;
+        cursor: pointer;
+    }
+    .star.selected {
+        color: gold;
+    }
+
+    .product-section .card{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .product-section .card img{
+        height: 250px;
+    }
+
+
+    .view-more {
+        padding: 0.5rem 3rem;
+        letter-spacing: 3px;
+        background-color: white;
+        border: 1px solid #1C1C50;
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .view-more:hover {
+        background-color: #1C1C50;
+        color: white;
+        border: none;
+        transition: 0.5s ease;
+    }
+
+    .product-icon i {
+        font-size: 3rem;
+        color: #1C1C50;
+    }
+    /* === product section finish === */
+
+    /* === about section start === */
+    .about-icon i {
+        font-size: 3rem;
+        color: #1C1C50;
+    }
+    /* === about section finish === */
+
+    /* === footer section start === */
+    .footer-section {
+        background-color: #1C1C50;
+        color: white;
+        font-family: Roboto Slab sans-serif;
+    }
+
+    .footer-section .col ul li{
+        list-style-type: none;
+        line-height: 2rem;
+    }
+
+    .footer-section .col ul li a{
+        color: white;
+        list-style-type: none;
+    }
+
+    .footer-section .col a {
+        padding-right: 15px;
+        color: white;
+    }
+
+    .footer-end {
+        font-size: 0.9rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* === footer section finish === */
+}
+
+
+
+
