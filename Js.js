@@ -26,3 +26,39 @@ $(document).ready(function() {
         console.log('Search Query:', searchQuery);
     });
 });
+
+// window.addEventListener ('DOMContentLoaded', function() {
+//     let products = document.querySelectorAll('.product'),
+//         buttons = document.querySelectorAll('.buttonsavat'),
+//         savatbtn = document.querySelector('.savat');
+
+
+//     function createCart (){
+//         let cart = document.createElement('div'),
+//             field = document.createElement('div'),
+//             heading = document.createElement('h2'),
+//             closeBtn = document.createElement('button');
+
+//         // tayyor style berilgan css fileda
+//         cart.classList.add('cart')
+//         field.classList.add('cart-field')
+//         closeBtn.classList.add('closeBtn')
+//         heading.textContent = 'Korzinka'
+//         closeBtn.textContent = 'Zakrit'
+
+//         document.body.appendChild(cart)
+//         cart.appendChild(heading)
+//         cart.appendChild(field)
+//         cart.appendChild(closeBtn)
+
+//     }
+//     createCart()
+
+//     let cart = this.document.querySelector('.cart')
+
+//     savatbtn.addEventListener('click', function() {
+//         cart.style.display = 'block'
+//     })
+// })
+
+
