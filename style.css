@@ -196,6 +196,10 @@ form {
 .product-row .card img {
     height: 172.88px;
 }
+
+.display-none {
+    display: none;
+}
 /* === product section finish === */
 
 /* === about section start === */
@@ -411,6 +415,9 @@ form {
     .product-row .card img {
         height: 150px;
     }
+    .display-none {
+        display: none;
+    }
     /* === product section finish === */
 
     /* === about section start === */
@@ -594,6 +601,10 @@ form {
     .product-icon i {
         font-size: 3rem;
         color: #1C1C50;
+    }
+
+    .display-none {
+        display: none;
     }
     /* === product section finish === */
 
@@ -803,6 +814,9 @@ form {
         font-size: 3rem;
         color: #1C1C50;
     }
+    .display-none {
+        display: none;
+    }
     /* === product section finish === */
 
     /* === about section start === */
@@ -811,6 +825,11 @@ form {
         color: #1C1C50;
     }
     /* === about section finish === */
+
+    /* korzinka display  */
+    .display-none {
+        display: none;
+    }
 
     /* === footer section start === */
     .footer-section {

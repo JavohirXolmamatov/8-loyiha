@@ -27,38 +27,39 @@ $(document).ready(function() {
     });
 });
 
-// window.addEventListener ('DOMContentLoaded', function() {
-//     let products = document.querySelectorAll('.product'),
-//         buttons = document.querySelectorAll('.buttonsavat'),
-//         savatbtn = document.querySelector('.savat');
+window.addEventListener ('DOMContentLoaded', function() {
+    let savatBtn = document.querySelector('.savat'),
+        exitBtn = this.document.querySelector('.exit'),
+        buttons = document.querySelectorAll('.btn-savat'),
+        product = document.querySelectorAll('.product'),
+        mahsulotlar = document.querySelector('.mahsulotlar');
+        dspNone = this.document.querySelector('.display-none')
+    
 
+    savatBtn.addEventListener ('click', () => {
+        dspNone.style.display = 'block'
+    })
 
-//     function createCart (){
-//         let cart = document.createElement('div'),
-//             field = document.createElement('div'),
-//             heading = document.createElement('h2'),
-//             closeBtn = document.createElement('button');
+    exitBtn.addEventListener ('click', () => {
+        dspNone.style.display = 'none'
+    })
 
-//         // tayyor style berilgan css fileda
-//         cart.classList.add('cart')
-//         field.classList.add('cart-field')
-//         closeBtn.classList.add('closeBtn')
-//         heading.textContent = 'Korzinka'
-//         closeBtn.textContent = 'Zakrit'
+    buttons.forEach((button, i) => {
+        button.addEventListener('click', () => {
+            let productBtn = product[i].cloneNode(true),
+                btn = productBtn.querySelector('.btn-savat');
 
-//         document.body.appendChild(cart)
-//         cart.appendChild(heading)
-//         cart.appendChild(field)
-//         cart.appendChild(closeBtn)
+            // tugmani olib tashlash
+            btn.remove()
 
-//     }
-//     createCart()
-
-//     let cart = this.document.querySelector('.cart')
-
-//     savatbtn.addEventListener('click', function() {
-//         cart.style.display = 'block'
-//     })
-// })
-
+            console.log(productBtn);
+            
+            // Mahsulotni korzinkaga qushish
+            mahsulotlar.appendChild(productBtn)
+            
+        })
+        
+    })
+   
+})
 
